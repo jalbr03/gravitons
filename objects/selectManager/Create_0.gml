@@ -14,11 +14,7 @@ P2chose = "";
 P3chose = "";
 P4chose = "";
 
-Redis = 0;
-Orangeis = 0;
-Blueis = 0;
-Purpleis = 0;
-
 playersChoose = [P1chose,P2chose,P3chose,P4chose];
 playersselect = [obj_player_select1,obj_player_select2,obj_player_select3,obj_player_select4];
-colors = [Redis,Orangeis,Blueis,Purpleis];
+players = [obj_graviton_red,obj_graviton_orange,obj_graviton_blue,obj_graviton_purple];
+playersGamePads = [obj_player_select1.game_pad,obj_player_select2.game_pad,obj_player_select3.game_pad,obj_player_select4.game_pad];

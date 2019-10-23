@@ -5,4 +5,5 @@ grv = 0.5;
 
 grvdirection = -1;
 
+game_pad = 0;
 depth = -1;

@@ -31,19 +31,19 @@
     },
     "resources": [
         {
+            "Key": "025ff2b9-af2c-45bc-885d-f067cf033c0a",
+            "Value": {
+                "id": "1b655d9a-d6ac-4d40-98c3-fd81b92c8cce",
+                "resourcePath": "sprites\\spr_graviton_purple\\spr_graviton_purple.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04542894-d99a-4c8f-89b0-901c74dc1e49",
             "Value": {
                 "id": "0a63d2d7-e3bf-4f1e-afc1-214e3a2bbf68",
                 "resourcePath": "objects\\obj_is_static\\obj_is_static.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "0be8de59-1096-4e78-906c-1d2db28d9316",
-            "Value": {
-                "id": "db626abd-7725-4592-a66f-6bc7e32448d7",
-                "resourcePath": "sprites\\spr_graviton_purple\\spr_graviton_purple.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

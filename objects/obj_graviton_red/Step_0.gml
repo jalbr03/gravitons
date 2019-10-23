@@ -1,6 +1,6 @@
-left = gamepad_axis_value(selectManager.Redis,gp_axislh) < 0;
-right = gamepad_axis_value(selectManager.Redis,gp_axislh) > 0;
-SWgravity = gamepad_button_check_pressed(selectManager.Redis,gp_face1);
+left = gamepad_axis_value(game_pad,gp_axislh) < 0;
+right = gamepad_axis_value(game_pad,gp_axislh) > 0;
+SWgravity = gamepad_button_check_pressed(game_pad,gp_face1);
 
 //\\moving calc//\\
 var move = right - left;
