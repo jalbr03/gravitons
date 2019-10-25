@@ -4,30 +4,11 @@
     "mvc": "1.0",
     "name": "obj_graviton_purple",
     "eventList": [
-        {
-            "id": "a3c2da4c-482a-4d19-8ae6-6df6f0445fd3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c040a81a-f925-4602-b27e-5a05cd1e504d"
-        },
-        {
-            "id": "2a50dbfa-f94d-412e-ba00-cc2b92dec362",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c040a81a-f925-4602-b27e-5a05cd1e504d"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "fcfaf13b-8c3a-454e-9e10-ebef523dbab8",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

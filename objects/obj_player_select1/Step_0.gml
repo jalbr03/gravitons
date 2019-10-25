@@ -6,8 +6,8 @@ if(asigned == false){
 	for(i=array_length_1d(selectManager.gamepads_left)-1;i>=0;i--){
 		if(gamepad_button_check(selectManager.gamepads_left[i],gp_face1) && selectManager.gamepads_left[i] != -1){
 			game_pad = selectManager.gamepads_left[i];
-			asigned = true;
 			selectManager.gamepads_left[i] = -1;
+			asigned = true;
 			exit;
 		}
 	}
@@ -18,15 +18,12 @@ if(asigned == true){
 	if(left && cusormoved == false){
 		playerselect --;
 		cusormoved = true;
-	}
-	if(right && cusormoved == false){
+	}if(right && cusormoved == false){
 		playerselect ++;
 		cusormoved = true;
-	}
-	if(!left && !right){
+	}if(!left && !right){
 		cusormoved = false;
 	}
-	
 	
 	if(selectManager.P2chose != playerselect && selectManager.P3chose != playerselect && selectManager.P4chose != playerselect){
 		image_index = playerselect-1;
@@ -37,7 +34,6 @@ if(asigned == true){
 	if(selectManager.P2chose == playerselect || selectManager.P3chose == playerselect || selectManager.P4chose == playerselect){
 		image_index = playerselect+3;
 	}
-	
 	
 }
 if(playerselect <= 0) playerselect = 4;

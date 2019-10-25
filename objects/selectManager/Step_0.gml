@@ -3,6 +3,7 @@ if(room == room_select){
 }
 
 if(instance_exists(levelManager)){
+	gamepads_left = [0,1,2,3,4,5,6,7,8,9,10,11];
 	playersChoose = [P1chose,P2chose,P3chose,P4chose];
 	for(k=4;k>=0;k--){
 		for(l=4;l>0;l--){

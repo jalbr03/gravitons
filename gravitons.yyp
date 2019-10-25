@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01228b2c-e55f-4fdc-bd6e-50379e728efe",
+            "Value": {
+                "id": "49806cde-a4fa-4b40-8a8a-bb5a48e83200",
+                "resourcePath": "views\\01228b2c-e55f-4fdc-bd6e-50379e728efe.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "025ff2b9-af2c-45bc-885d-f067cf033c0a",
             "Value": {
                 "id": "1b655d9a-d6ac-4d40-98c3-fd81b92c8cce",
@@ -60,6 +68,14 @@
                 "id": "bc9581e6-7bce-473b-b408-c64274234152",
                 "resourcePath": "views\\1f68ee6d-7773-4fe7-b1e9-bedac665226a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "24787012-4036-41ed-a3b7-1c394875dbf0",
+            "Value": {
+                "id": "51bb8d97-ce42-4141-b66b-3ca7f7d1fe6e",
+                "resourcePath": "sprites\\spr_grav_shield_ring\\spr_grav_shield_ring.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -170,8 +186,16 @@
             "Key": "68aa05ee-2951-461b-99c0-f495ffc930d3",
             "Value": {
                 "id": "cfc0e0ce-521a-4bb5-8bc1-c9a0f55e00e8",
-                "resourcePath": "sprites\\spr_graviton_red_other\\spr_graviton_red_other.yy",
+                "resourcePath": "sprites\\spr_grav_shield_blink\\spr_grav_shield_blink.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6922245d-6713-45c1-a87e-ecb55efc859d",
+            "Value": {
+                "id": "039c92b6-3589-48ac-86a1-591c20cab9ba",
+                "resourcePath": "objects\\obj_Grav_shield_ring\\obj_Grav_shield_ring.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -196,6 +220,14 @@
                 "id": "42f9a028-5143-4a2f-aed0-854734df2835",
                 "resourcePath": "views\\7de2f919-857f-4c5c-9f9c-9b97c8b2fa1d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7fe5922b-650c-454a-96d1-79817efb0cd2",
+            "Value": {
+                "id": "216d6ba7-f134-4c72-823a-5127068b5b19",
+                "resourcePath": "objects\\obj_Grav_shield\\obj_Grav_shield.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -316,6 +348,14 @@
                 "id": "66edd563-dbab-4219-812c-662218ea6ae4",
                 "resourcePath": "views\\aebd8462-329b-4a6c-9690-cfe893e09773.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b046eac9-f8da-4f74-ab6c-3941e6d81a17",
+            "Value": {
+                "id": "2f566103-dc02-4828-b7eb-ea65d79a86c7",
+                "resourcePath": "sprites\\spr_grav_shield\\spr_grav_shield.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -467,6 +507,14 @@
             "Value": {
                 "id": "55b80b8a-f385-4ddc-a9be-6ea573995e16",
                 "resourcePath": "objects\\levelManager\\levelManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fcfaf13b-8c3a-454e-9e10-ebef523dbab8",
+            "Value": {
+                "id": "b473349b-2dbf-435d-b31a-d20c2c83f018",
+                "resourcePath": "objects\\obj_graviton\\obj_graviton.yy",
                 "resourceType": "GMObject"
             }
         }

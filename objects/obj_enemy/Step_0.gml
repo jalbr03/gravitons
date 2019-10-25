@@ -1,10 +1,10 @@
 shoottime = choose(0,90,120,200);
 
 if(startingX < avragX){
-	if(P1.x > target.x) target = P1;
-	if(P2.x > target.x) target = P2;
-	if(P3.x > target.x) target = P3;
-	if(P4.x > target.x) target = P4;
+	if(instance_exists(P1) && P1.x > target.x) target = P1;
+	if(instance_exists(P2) && P2.x > target.x) target = P2;
+	if(instance_exists(P3) && P3.x > target.x) target = P3;
+	if(instance_exists(P4) && P4.x > target.x) target = P4;
 }
 
 image_angle = point_direction(x,y,target.x,target.y);
