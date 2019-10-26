@@ -1,7 +1,3 @@
-P1 = obj_graviton_red;
-P2 = obj_graviton_orange;
-P3 = obj_graviton_blue;
-P4 = obj_graviton_purple;
 target = 0;
 
 players = [obj_graviton_red, obj_graviton_orange, obj_graviton_blue, obj_graviton_purple]
@@ -16,3 +12,8 @@ startingX = x;
 alarm[1] = 30;
 
 shoottime = 0;
+
+spd = 1;
+fallowspd = spd;
+fallowspeedUp = 0.04;
+bouncespd = spd*2;

@@ -1,3 +1,4 @@
+/// @description shield cool down
 cooldown = false;
-shield = noone;
+shieldHP = 1;
 Ring = noone;

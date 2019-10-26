@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "121fb48c-7172-4059-b118-e373d0ff8a76",
+            "Value": {
+                "id": "4f12745b-139f-4666-956a-544545f5a9d7",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f68ee6d-7773-4fe7-b1e9-bedac665226a",
             "Value": {
                 "id": "bc9581e6-7bce-473b-b408-c64274234152",
@@ -116,6 +124,14 @@
                 "id": "ade087de-5144-4ea3-ac13-301e1faf81a7",
                 "resourcePath": "views\\39f4544a-b521-4fc7-95dc-a1b34aa52c1a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3c568436-7417-4ce6-b7a4-cbc83b6018b6",
+            "Value": {
+                "id": "606a3bbc-79a2-4a32-9226-acdb0a29ce09",
+                "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -343,6 +359,14 @@
             }
         },
         {
+            "Key": "adddd5b6-de19-45ad-ba27-d24d00a4aeee",
+            "Value": {
+                "id": "6483aaf4-70be-4f78-afba-d5a9919b9e9a",
+                "resourcePath": "objects\\obj_enemy_damaging\\obj_enemy_damaging.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aebd8462-329b-4a6c-9690-cfe893e09773",
             "Value": {
                 "id": "66edd563-dbab-4219-812c-662218ea6ae4",
@@ -468,6 +492,14 @@
                 "id": "1d425b5e-7011-45bb-a50d-1a191dcb2fe1",
                 "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e9518cca-974a-4395-a769-a075ac7e19fd",
+            "Value": {
+                "id": "633fe675-aea7-4cc3-b460-35a45159fa2e",
+                "resourcePath": "rooms\\room_lvl1\\room_lvl1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

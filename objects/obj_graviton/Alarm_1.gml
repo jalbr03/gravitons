@@ -1,0 +1,1 @@
+if(shieldHP < shieldHPfull) shieldHP += 1;

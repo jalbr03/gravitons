@@ -1,13 +1,17 @@
 shoottime = choose(0,90,120,200);
-
+//\\targetting//\\
 if(startingX < avragX){
-	if(instance_exists(P1) && P1.x > target.x) target = P1;
-	if(instance_exists(P2) && P2.x > target.x) target = P2;
-	if(instance_exists(P3) && P3.x > target.x) target = P3;
-	if(instance_exists(P4) && P4.x > target.x) target = P4;
+	for(i=0;i<=array_length_1d(players)-1;i++){
+		if(instance_exists(players[i]) && players[i].x > target.x) target = players[i];
+	}
 }
 
-image_angle = point_direction(x,y,target.x,target.y);
-move_towards_point(target.x,target.y,1)
+//\\speeding up to player//\\
+if(fallowspd < spd)fallowspd += fallowspeedUp;
 
+//\\fallowing players//\\
+image_angle = point_direction(x,y,target.x,target.y);
+move_towards_point(target.x,target.y,fallowspd)
+
+//\\shooting//\\
 if(alarm[0] == -1) alarm[0] = shoottime;
