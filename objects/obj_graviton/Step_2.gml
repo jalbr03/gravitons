@@ -25,6 +25,11 @@ if(shieldHP <= 0.5) {
 	cooldown = true;
 	shieldON = false;
 	if(alarm[0] == -1)alarm[0] = global.shieldtime;
+}if(shieldHP > 0.5 && shieldHP <= shieldHPfull/1.5){
+	shield.sprite_index = spr_grav_shield_blink;
+	shield.image_speed = 4;
+}else{
+	shield.sprite_index = spr_grav_shield;
 }
 
 //\\activating shield and changing size relative to HP//\\
