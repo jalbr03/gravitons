@@ -7,9 +7,9 @@ chargeAtack = gamepad_button_check(game_pad, (gp_face3));
 var move = right - left;
 hsp = move * movesp;
 
-//checking if the player is grapling|
-if(isgrapled == true) vsp = 0;
-if(isgrapled == false){           //|
+//checking if the player is grappling|
+if(isgrappled == true) vsp = 0;
+if(isgrappled == false){           //|
 ////////////////////////////////////|
 	
 //\\gravity direction check//\\

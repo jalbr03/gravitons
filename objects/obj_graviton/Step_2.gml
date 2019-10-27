@@ -1,8 +1,8 @@
 /// @description abilities
 shieldActivate = gamepad_button_check_pressed(game_pad, (gp_face2));
 chargeAtack = gamepad_button_check(game_pad, (gp_face3));
-grapling = gamepad_button_check(game_pad, (gp_face4));
-graple_onClick = gamepad_button_check_pressed(game_pad, (gp_face4));
+grappling = gamepad_button_check(game_pad, (gp_face4));
+grapple_onClick = gamepad_button_check_pressed(game_pad, (gp_face4));
 //\\//\\graple movement//\\//\\
 left = gamepad_axis_value(game_pad,gp_axislh) < 0;
 right = gamepad_axis_value(game_pad,gp_axislh) > 0;
@@ -76,30 +76,30 @@ if(shieldON == true && chargeAtack){
 	uptospin = false;
 }
 
-//\\graple//\\
+//\\grapple//\\
 
-if(graple_onClick){
-	grapleX = x;
-	grapleY = y;
+if(grapple_onClick){
+	grappleX = x;
+	grappleY = y;
 }
 ///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\  || (y == grapleY+grapleRadius || y == grapleY-grapleRadius)
-if(shieldON == false && grapling){
-	isgrapled = true;
-		if(x+hsp >= grapleX+grapleRadius || x+hsp <= grapleX-grapleRadius || place_meeting(x+hsp,y,obj_is_static)){
+if(shieldON == false && grappling){
+	isgrappled = true;
+		if(x+hsp >= grappleX+grappleRadius || x+hsp <= grappleX-grappleRadius || place_meeting(x+hsp,y,obj_is_static)){
 			hsp = 0;
 		}else{
 			x += sign(hsp);
 		}
 		x += hsp
 		//up and down
-		if(y+upsp >= grapleY+grapleRadius || y+upsp <= grapleY-grapleRadius|| place_meeting(x,y+upsp,obj_is_static)){
+		if(y+upsp >= grappleY+grappleRadius || y+upsp <= grappleY-grappleRadius|| place_meeting(x,y+upsp,obj_is_static)){
 			upsp = 0;
 		}else{
 			y += sign(upsp);
 		}
 		y += upsp
 }else{
-	isgrapled = false;
+	isgrappled = false;
 }
 ///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\
 
@@ -120,9 +120,9 @@ if(shieldON == false && grapling){
 
 
 /*
-if(global.shieldON == false && grapling){
-	isgrapled = true;
-	if(y < grapleY+grapleRadius && y > -grapleY+grapleRadius){
+if(global.shieldON == false && grappling){
+	isgrappled = true;
+	if(y < grappleY+grappleRadius && y > -grappleY+grappleRadius){
 		if(place_meeting(x,y+upsp,obj_is_static)){
 			while(!place_meeting(x,y+sign(upsp),obj_is_static)){
 				y += sign(upsp);
@@ -130,7 +130,7 @@ if(global.shieldON == false && grapling){
 			upsp = 0;
 		}
 		y += upsp
-	}if(x < grapleX+grapleRadius && x > -grapleX+grapleRadius){
+	}if(x < grappleX+grappleRadius && x > -grappleX+grappleRadius){
 		if(place_meeting(x+hsp,y,obj_is_static)){
 			while(!place_meeting(x+sign(hsp),y,obj_is_static)){
 				x += sign(hsp);

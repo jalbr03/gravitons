@@ -22,10 +22,10 @@ spin = false;
 imgspd = 0;
 uptospin = false;
 
-isgrapled = false;
-grapleX = 0;
-grapleY = 0;
-grapleRadius = 100;
+isgrappled = false;
+grappleX = 0;
+grappleY = 0;
+grappleRadius = 100;
 
 damage = 1;
 
