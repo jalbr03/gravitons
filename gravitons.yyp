@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "4bd4f635-0009-462f-8343-0c4ce2816e77",
+            "Value": {
+                "id": "9c289ca7-b0a6-4cee-8c3d-f2df8368eee3",
+                "resourcePath": "objects\\obj_is_grappable\\obj_is_grappable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "51a80c11-8a54-4ef6-ba3e-5e0efc4ec50d",
             "Value": {
                 "id": "aa0f02ec-1a0f-424d-81d1-e60eea181e2f",

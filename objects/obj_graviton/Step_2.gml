@@ -78,21 +78,20 @@ if(shieldON == true && chargeAtack){
 
 //\\grapple//\\
 
-if(grapple_onClick){
-	grappleX = x;
-	grappleY = y;
-}
+
 ///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\  || (y == grapleY+grapleRadius || y == grapleY-grapleRadius)
-if(shieldON == false && grappling){
+if(place_meeting(x,y,obj_is_grappable) || place_meeting(x,y+1,obj_is_static) || place_meeting(x,y-1,obj_is_static)) is_touching_grappable = true;
+if(!grappling) is_touching_grappable = false;
+if(shieldON == false && grappling && is_touching_grappable == true){
 	isgrappled = true;
-		if(x+hsp >= grappleX+grappleRadius || x+hsp <= grappleX-grappleRadius || place_meeting(x+hsp,y,obj_is_static)){
+		if(x+hsp > grappleX+grappleRadius || x+hsp < grappleX-grappleRadius || place_meeting(x+hsp,y,obj_is_static)){
 			hsp = 0;
 		}else{
 			x += sign(hsp);
 		}
 		x += hsp
 		//up and down
-		if(y+upsp >= grappleY+grappleRadius || y+upsp <= grappleY-grappleRadius|| place_meeting(x,y+upsp,obj_is_static)){
+		if(y+upsp > grappleY+grappleRadius || y+upsp < grappleY-grappleRadius|| place_meeting(x,y+upsp,obj_is_static)){
 			upsp = 0;
 		}else{
 			y += sign(upsp);
@@ -100,6 +99,13 @@ if(shieldON == false && grappling){
 		y += upsp
 }else{
 	isgrappled = false;
+}
+if(grapple_onClick && is_touching_grappable == true){
+	grappleX = x;
+	grappleY = y;
+}if(isgrappled == false){
+	grappleX = x;
+	grappleY = y;
 }
 ///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\
 
@@ -116,33 +122,5 @@ if(shieldON == false && grappling){
 
 
 
-
-
-
-/*
-if(global.shieldON == false && grappling){
-	isgrappled = true;
-	if(y < grappleY+grappleRadius && y > -grappleY+grappleRadius){
-		if(place_meeting(x,y+upsp,obj_is_static)){
-			while(!place_meeting(x,y+sign(upsp),obj_is_static)){
-				y += sign(upsp);
-			}
-			upsp = 0;
-		}
-		y += upsp
-	}if(x < grappleX+grappleRadius && x > -grappleX+grappleRadius){
-		if(place_meeting(x+hsp,y,obj_is_static)){
-			while(!place_meeting(x+sign(hsp),y,obj_is_static)){
-				x += sign(hsp);
-			}
-			hsp = 0;
-		}
-		x += hsp
-	}else{
-		x += (grapleX - x);
-	}
-}else{
-	isgrapled = false;
-}
 
 

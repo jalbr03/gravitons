@@ -26,6 +26,7 @@ isgrappled = false;
 grappleX = 0;
 grappleY = 0;
 grappleRadius = 100;
+is_touching_grappable = false;
 
 damage = 1;
 
