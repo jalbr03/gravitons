@@ -1,4 +1,4 @@
-shoottime = choose(0,90,120,200);
+shoottime = choose(0,200,300,400);
 //\\targetting//\\
 if(startingX < avragX){
 	for(i=0;i<=array_length_1d(players)-1;i++){

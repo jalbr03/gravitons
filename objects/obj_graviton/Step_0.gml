@@ -6,6 +6,12 @@ chargeAtack = gamepad_button_check(game_pad, (gp_face3));
 //\\moving calc//\\
 var move = right - left;
 hsp = move * movesp;
+
+//checking if the player is grapling|
+if(isgrapled == true) vsp = 0;
+if(isgrapled == false){           //|
+////////////////////////////////////|
+	
 //\\gravity direction check//\\
 if(grvdirection == 1) vsp += grv;
 if(grvdirection == -1) vsp -= grv;
@@ -29,7 +35,8 @@ if(SWgravity){
 }
 y += vsp;
 
-if(!chargeAtack){
+//moving is posible when not charging
+if(uptospin == false){
 	//\\moving/side colision calc//\\
 	if(place_meeting(x+hsp,y,obj_is_static)){
 		while(!place_meeting(x+sign(hsp),y,obj_is_static)){
@@ -48,6 +55,8 @@ if(!chargeAtack){
 		image_speed = 0;
 	}
 }
+}
+
 //\\x looping//\\
 if(x <= -sidepad) x = room_width;
 if(x >= room_width+sidepad) x = -sidepad

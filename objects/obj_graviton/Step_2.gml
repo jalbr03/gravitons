@@ -1,6 +1,19 @@
 /// @description abilities
 shieldActivate = gamepad_button_check_pressed(game_pad, (gp_face2));
 chargeAtack = gamepad_button_check(game_pad, (gp_face3));
+grapling = gamepad_button_check(game_pad, (gp_face4));
+graple_onClick = gamepad_button_check_pressed(game_pad, (gp_face4));
+//\\//\\graple movement//\\//\\
+left = gamepad_axis_value(game_pad,gp_axislh) < 0;
+right = gamepad_axis_value(game_pad,gp_axislh) > 0;
+up = gamepad_axis_value(game_pad,gp_axislv) < 0;
+down = gamepad_axis_value(game_pad,gp_axislv) > 0;
+
+//\\moving calc//\\
+var movehorizontal = right - left;
+var movevertical = down - up;
+hsp = movehorizontal * movesp;
+upsp = movevertical * movesp;
 
 //\\making shield when posible//\\
 if(!instance_exists(shield)){
@@ -62,3 +75,74 @@ if(shieldON == true && chargeAtack){
 	imgspd = 0;
 	uptospin = false;
 }
+
+//\\graple//\\
+
+if(graple_onClick){
+	grapleX = x;
+	grapleY = y;
+}
+///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\  || (y == grapleY+grapleRadius || y == grapleY-grapleRadius)
+if(shieldON == false && grapling){
+	isgrapled = true;
+		if(x+hsp >= grapleX+grapleRadius || x+hsp <= grapleX-grapleRadius || place_meeting(x+hsp,y,obj_is_static)){
+			hsp = 0;
+		}else{
+			x += sign(hsp);
+		}
+		x += hsp
+		//up and down
+		if(y+upsp >= grapleY+grapleRadius || y+upsp <= grapleY-grapleRadius|| place_meeting(x,y+upsp,obj_is_static)){
+			upsp = 0;
+		}else{
+			y += sign(upsp);
+		}
+		y += upsp
+}else{
+	isgrapled = false;
+}
+///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+if(global.shieldON == false && grapling){
+	isgrapled = true;
+	if(y < grapleY+grapleRadius && y > -grapleY+grapleRadius){
+		if(place_meeting(x,y+upsp,obj_is_static)){
+			while(!place_meeting(x,y+sign(upsp),obj_is_static)){
+				y += sign(upsp);
+			}
+			upsp = 0;
+		}
+		y += upsp
+	}if(x < grapleX+grapleRadius && x > -grapleX+grapleRadius){
+		if(place_meeting(x+hsp,y,obj_is_static)){
+			while(!place_meeting(x+sign(hsp),y,obj_is_static)){
+				x += sign(hsp);
+			}
+			hsp = 0;
+		}
+		x += hsp
+	}else{
+		x += (grapleX - x);
+	}
+}else{
+	isgrapled = false;
+}
+
+

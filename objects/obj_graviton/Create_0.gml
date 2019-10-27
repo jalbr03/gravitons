@@ -1,4 +1,5 @@
 hsp = 3;
+upsp = hsp;
 vsp = 0;
 movesp = 2;
 grv = 0.5;
@@ -21,4 +22,10 @@ spin = false;
 imgspd = 0;
 uptospin = false;
 
+isgrapled = false;
+grapleX = 0;
+grapleY = 0;
+grapleRadius = 100;
+
 damage = 1;
+
