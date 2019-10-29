@@ -3,7 +3,7 @@ upsp = hsp;
 vsp = 0;
 movesp = 2;
 grv = 0.5;
-sidepad = 5;
+HP = 3;
 
 grvdirection = 1;
 
@@ -27,6 +27,8 @@ grappleX = 0;
 grappleY = 0;
 grappleRadius = 100;
 is_touching_grappable = false;
+grappleTime = 5; //seconds
+grappleFullyCharged = grappleTime;
 
 damage = 1;
 

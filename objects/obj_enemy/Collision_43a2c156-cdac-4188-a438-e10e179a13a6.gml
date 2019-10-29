@@ -1,0 +1,1 @@
+y += sign(y - other.y)*spd;

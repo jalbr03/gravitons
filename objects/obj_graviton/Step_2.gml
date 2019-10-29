@@ -77,12 +77,9 @@ if(shieldON == true && chargeAtack){
 }
 
 //\\grapple//\\
-
-
-///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\  || (y == grapleY+grapleRadius || y == grapleY-grapleRadius)
 if(place_meeting(x,y,obj_is_grappable) || place_meeting(x,y+1,obj_is_static) || place_meeting(x,y-1,obj_is_static)) is_touching_grappable = true;
 if(!grappling) is_touching_grappable = false;
-if(shieldON == false && grappling && is_touching_grappable == true){
+if(shieldON == false && grappling && is_touching_grappable == true && grappleTime > 0){
 	isgrappled = true;
 		if(x+hsp > grappleX+grappleRadius || x+hsp < grappleX-grappleRadius || place_meeting(x+hsp,y,obj_is_static)){
 			hsp = 0;
@@ -106,21 +103,7 @@ if(grapple_onClick && is_touching_grappable == true){
 }if(isgrappled == false){
 	grappleX = x;
 	grappleY = y;
+	if(alarm[4] == -1) alarm[4] = fps;
+}if(isgrappled == true){
+	if(alarm[3] == -1) alarm[3] = fps;
 }
-///\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\\\/\//\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

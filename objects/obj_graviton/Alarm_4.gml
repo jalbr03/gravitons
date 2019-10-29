@@ -1,0 +1,1 @@
+if(grappleTime < grappleFullyCharged)grappleTime += 1;

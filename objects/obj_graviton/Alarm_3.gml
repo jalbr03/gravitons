@@ -1,0 +1,1 @@
+if(grappleTime > 0)grappleTime -= 1;

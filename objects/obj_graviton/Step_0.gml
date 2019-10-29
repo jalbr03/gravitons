@@ -57,6 +57,5 @@ if(uptospin == false){
 }
 }
 
-//\\x looping//\\
-if(x <= -sidepad) x = room_width;
-if(x >= room_width+sidepad) x = -sidepad
+//\\HP//\\
+image_alpha = HP/2.5;
